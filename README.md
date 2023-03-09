@@ -1,7 +1,9 @@
 
-# Welcome to your CDK Python project!
+# Wacko's Tools Website Infrastructure
 
-This is a blank project for CDK development with Python.
+This is a CDK Infrastructure to create a static website using S3 and CloudFront to serve the website.
+
+## CDK Project Instructions
 
 The `cdk.json` file tells the CDK Toolkit how to execute your app.
 
@@ -25,16 +27,23 @@ step to activate your virtualenv.
 $ source .venv/bin/activate
 ```
 
-If you are a Windows platform, you would activate the virtualenv like this:
-
-```
-% .venv\Scripts\activate.bat
-```
-
 Once the virtualenv is activated, you can install the required dependencies.
 
 ```
 $ pip install -r requirements.txt
+```
+
+Set Environment Variables:
+```bash
+# Domain name (website name)
+domain_name="<domain_name>"
+
+# Hosted Zone ID 
+# https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/hosted-zones-working-with.html
+hosted_zone_id="<hosted_zone_id>"
+
+# Hosted Zone Name
+hosted_zone_name="<hosted_zone_name>"
 ```
 
 At this point you can now synthesize the CloudFormation template for this code.
