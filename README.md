@@ -3,6 +3,9 @@
 
 This is a CDK Infrastructure to create a static website using S3 and CloudFront to serve the website.
 
+## Architecture
+![](https://raw.githubusercontent.com/SabeerBakir/wacko-tools-infra/ef3621fd04cc523056e01b62ff288615731b6a5b/S3_Static_Hosted_Site.svg)
+
 ## CDK Project Instructions
 
 The `cdk.json` file tells the CDK Toolkit how to execute your app.
